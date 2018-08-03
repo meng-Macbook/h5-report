@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60039123-8577-47fb-ae92-d55dff5ce3d1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/js/H5ComponentBase.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/H5ComponentBase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test-H5ComponentBase.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/test-H5ComponentBase.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/H5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/H5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test-H5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,41 +19,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="test-H5.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/test-H5.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+            <state relative-caret-position="338">
+              <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test-H5ComponentBase.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/test-H5ComponentBase.html">
+      <file leaf-file-name="H5.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/H5.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
+            <state>
+              <caret column="13" selection-start-column="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="H5ComponentBase.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/H5ComponentBase.js">
+      <file leaf-file-name="H5.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/H5.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+            <state relative-caret-position="509">
+              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test-valid.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test-valid.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="76" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -70,7 +63,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/H5.js" />
         <option value="$PROJECT_DIR$/js/H5_loading.js" />
         <option value="$PROJECT_DIR$/js/H5ComponentBar.js" />
         <option value="$PROJECT_DIR$/js/H5ComponentBar_v.js" />
@@ -79,7 +71,6 @@
         <option value="$PROJECT_DIR$/js/H5ComponentPolyline.js" />
         <option value="$PROJECT_DIR$/js/H5ComponentRadar.js" />
         <option value="$PROJECT_DIR$/js/H5ComponentRing.js" />
-        <option value="$PROJECT_DIR$/css/H5.css" />
         <option value="$PROJECT_DIR$/css/H5_loading.css" />
         <option value="$PROJECT_DIR$/css/H5ComponentBar.css" />
         <option value="$PROJECT_DIR$/css/H5ComponentBar_v.css" />
@@ -92,6 +83,9 @@
         <option value="$PROJECT_DIR$/test/test-valid.html" />
         <option value="$PROJECT_DIR$/js/H5ComponentBase.js" />
         <option value="$PROJECT_DIR$/test/test-H5ComponentBase.html" />
+        <option value="$PROJECT_DIR$/css/H5.css" />
+        <option value="$PROJECT_DIR$/js/H5.js" />
+        <option value="$PROJECT_DIR$/test/test-H5.html" />
       </list>
     </option>
   </component>
@@ -203,12 +197,12 @@
       <workItem from="1533265524800" duration="300000" />
       <workItem from="1533265833040" duration="30000" />
       <workItem from="1533265870747" duration="17000" />
-      <workItem from="1533265894953" duration="10573000" />
+      <workItem from="1533265894953" duration="12556000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13012000" />
+    <option name="totallyTimeSpent" value="14995000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -276,9 +270,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/H5.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/H5_loading.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -307,9 +298,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/css/H5ComponentRing.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/H5.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/css/H5_loading.css">
@@ -378,6 +366,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/H5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/H5.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test-H5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
         </state>
       </provider>
     </entry>
