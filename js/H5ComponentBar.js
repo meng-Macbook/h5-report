@@ -1,29 +1,29 @@
 /* 散点图表组件对象 */
-let H5ComponentPoint = function ( name,  cfg = {} ) {
+let H5ComponentBar = function ( name,  cfg = {} ) {
     let component = new H5ComponentBase( name, cfg );
 
-    let base = cfg.data[0][1];
+    $.each(cfg.data, function (idx, item) {
+        console.log(item);
 
-    $.each(cfg.data, function ( idx, item ) {
+        let line = $('<div class="line"></div>');
+        let name = $('<div class="name"></div>');
+        let rate = $('<div class="rate"></div>');
+        let per = $('<div class="per"></div>');
 
-        let point = $('<div class="point point_'+ idx +'"></div>');
+        let width = item[1] * 100 + '%';
 
-        let name = $('<div class="name">'+ item[0] +'</div>');
-        let rate = $('<div class="per">'+ (item[1] * 100) +'%</div>');
+        let bgStyle = '';
+        item[2] && (bgStyle = 'style="background-color:' + item[2] + '"');
 
-        point.append(name.append(rate));
+        rate.html('<div class="bg"'+ bgStyle +'></div>')
+        rate.css('width', width);
 
-        let per = item[1]/base * 100 + '%';
-
-
-        point.width(per).height(per);
-
-        item[2] && point.css('backgroundColor', item[2]);
-        (item[3] !== undefined && item[4] !== undefined) && point.css('left', item[3]).css('top', item[4]);
-
-        component.append( point );
-
+        name.text( item[0]);
+        per.text( width );
+        line.append(name).append(rate).append(per);
+        component.append(line);
     })
+
 
     return component;
 }
