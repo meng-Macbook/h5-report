@@ -58,6 +58,32 @@ let H5ComponentRadar = function (name, cfg={}) {
         let y = r + Math.cos( rad ) * r;
         ctx.moveTo(r, r);
         ctx.lineTo(x, y);
+
+        // 输出项目文字
+        let text = $('<div class="text"></div>');
+        text.text(cfg.data[i][0]);
+        text.css('transition', 'all 1s ' + i * 0.1 + 's' );
+        // debugger;
+
+        // text.css('left', x/2);
+
+        if ( x > w/2) {
+            text.css('left', x/2 + 5);
+        } else {
+            text.css('right', (w-x)/2 + 5);
+        }
+
+        if ( y > h/2) {
+            text.css('top', y/2 + 5);
+        } else {
+            text.css('bottom', (h-y)/2 + 5);
+        }
+
+        cfg.data[i][2] && text.css('color', cfg.data[i][2]);
+
+        text.css('opacity', 0);
+
+        component.append(text);
     }
 
     ctx.closePath();
@@ -76,6 +102,9 @@ let H5ComponentRadar = function (name, cfg={}) {
     ctx2.strokeStyle = '#f00';
 
     function draw(per) {
+
+        per < 0 && component.find('.text').css('opacity', 0);
+        per >= 1 && component.find('.text').css('opacity', 1);
         // 输出数据的折线
         ctx2.clearRect(0, 0, w, h);
         ctx2.beginPath();
@@ -121,17 +150,17 @@ let H5ComponentRadar = function (name, cfg={}) {
         }
 
     })
-    // component.on('onLeave', function () {
-    //     // 雷达图退场动画
-    //     let s = 1;
-    //     for( let i = 0; i < 100; i++) {
-    //         setTimeout(() => {
-    //             s-= .01;
-    //             // draw(s);
-    //         }, i * 10);
-    //
-    //     }
-    // })
+    component.on('onLeave', function () {
+        // 雷达图退场动画
+        let s = 1;
+        for( let i = 0; i < 100; i++) {
+            setTimeout(() => {
+                s-= .01;
+                draw(s);
+            }, i * 10);
+
+        }
+    })
 
     return component;
 }
