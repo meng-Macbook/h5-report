@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60039123-8577-47fb-ae92-d55dff5ce3d1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/css/H5ComponentBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/H5ComponentBar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/H5ComponentBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/H5ComponentBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test-H5ComponentBar.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/test-H5ComponentBar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/H5ComponentPolyline.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/H5ComponentPolyline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test-H5ComponentPolyline.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,59 +19,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test-H5ComponentBar.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test-H5ComponentBar.html">
+      <file leaf-file-name="test-H5ComponentPolyline.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test-H5ComponentPolyline.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="71" column="24" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
+            <state relative-caret-position="233">
+              <caret line="53" column="28" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="H5ComponentBar.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/H5ComponentBar.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="38" column="15" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="H5ComponentBar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/H5ComponentBar.js">
+      <file leaf-file-name="H5ComponentPolyline.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/H5ComponentPolyline.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="15" column="74" lean-forward="true" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="H5.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/H5.js">
+      <file leaf-file-name="H5ComponentPolyline.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/H5ComponentPolyline.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="50" column="31" lean-forward="true" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+            <state relative-caret-position="328">
+              <caret line="122" column="25" selection-start-line="122" selection-start-column="25" selection-end-line="122" selection-end-column="25" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="e#683#699#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test-H5ComponentBase.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test-H5ComponentBase.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="59" column="24" lean-forward="true" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="H5ComponentPoint.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/H5ComponentPoint.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -82,6 +57,13 @@
       <find>afterRender</find>
       <find>afterSlideLoad</find>
       <find>h5_component_name_mybarcomponent&quot;</find>
+      <find>component</find>
+      <find>begin</find>
+      <find>path</find>
+      <find>let x</find>
+      <find>lineWidth</find>
+      <find>h5_component_polyline</find>
+      <find>strokeStyle</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -93,13 +75,11 @@
         <option value="$PROJECT_DIR$/js/H5_loading.js" />
         <option value="$PROJECT_DIR$/js/H5ComponentBar_v.js" />
         <option value="$PROJECT_DIR$/js/H5ComponentPie.js" />
-        <option value="$PROJECT_DIR$/js/H5ComponentPolyline.js" />
         <option value="$PROJECT_DIR$/js/H5ComponentRadar.js" />
         <option value="$PROJECT_DIR$/js/H5ComponentRing.js" />
         <option value="$PROJECT_DIR$/css/H5_loading.css" />
         <option value="$PROJECT_DIR$/css/H5ComponentBar_v.css" />
         <option value="$PROJECT_DIR$/css/H5ComponentPie.css" />
-        <option value="$PROJECT_DIR$/css/H5ComponentPolyline.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/test/newsss.js" />
         <option value="$PROJECT_DIR$/css/H5ComponentBase.css" />
@@ -115,6 +95,10 @@
         <option value="$PROJECT_DIR$/js/H5ComponentBar.js" />
         <option value="$PROJECT_DIR$/test/test-H5ComponentBar.html" />
         <option value="$PROJECT_DIR$/css/H5ComponentBar.css" />
+        <option value="$PROJECT_DIR$/css/test-H5ComponentPolyline.css" />
+        <option value="$PROJECT_DIR$/test/test-H5ComponentPolyline.html" />
+        <option value="$PROJECT_DIR$/css/H5ComponentPolyline.css" />
+        <option value="$PROJECT_DIR$/js/H5ComponentPolyline.js" />
       </list>
     </option>
   </component>
@@ -182,9 +166,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\WebstormProjects\h5-report\test" />
       <recent name="C:\Users\Administrator\WebstormProjects\h5-report\css" />
       <recent name="C:\Users\Administrator\WebstormProjects\h5-report\js" />
-      <recent name="C:\Users\Administrator\WebstormProjects\h5-report\test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -238,12 +222,13 @@
       <workItem from="1533265833040" duration="30000" />
       <workItem from="1533265870747" duration="17000" />
       <workItem from="1533265894953" duration="16385000" />
-      <workItem from="1533448722002" duration="7087000" />
+      <workItem from="1533448722002" duration="7829000" />
+      <workItem from="1533520373797" duration="14370000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25911000" />
+    <option name="totallyTimeSpent" value="41023000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -275,7 +260,50 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test/test-H5ComponentPolyline.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1444">
+          <caret line="76" column="37" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/H5ComponentPolyline.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/H5ComponentPoint.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/H5ComponentPolyline.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#683#699#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test-H5ComponentBar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1444">
+          <caret line="76" column="61" lean-forward="true" selection-start-line="76" selection-start-column="61" selection-end-line="76" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/test-H5.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1254">
@@ -369,13 +397,6 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test/newsss.js" />
-    <entry file="file://$PROJECT_DIR$/css/H5ComponentBase.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -404,27 +425,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/H5ComponentPoint.js">
+    <entry file="file://$PROJECT_DIR$/js/H5ComponentBase.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="195">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test-H5ComponentPoint.html">
+    <entry file="file://$PROJECT_DIR$/css/H5ComponentBar.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+        <state relative-caret-position="404">
+          <caret line="38" column="15" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/H5ComponentPoint.css">
+    <entry file="file://$PROJECT_DIR$/js/H5ComponentBar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        <state relative-caret-position="285">
+          <caret line="15" column="74" lean-forward="true" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
         </state>
       </provider>
     </entry>
@@ -438,17 +459,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test-H5ComponentBase.html">
+    <entry file="file://$PROJECT_DIR$/js/H5ComponentPoint.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="59" column="24" lean-forward="true" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/H5ComponentBase.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="19">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="20" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -457,22 +471,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test-H5ComponentBar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="71" column="24" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
+        <state relative-caret-position="86">
+          <caret line="52" column="19" lean-forward="true" selection-start-line="52" selection-start-column="19" selection-end-line="59" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/H5ComponentBar.js">
+    <entry file="file://$PROJECT_DIR$/test/test-H5ComponentBase.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="59" column="24" lean-forward="true" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/H5ComponentBase.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test-H5ComponentPolyline.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="53" column="28" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/H5ComponentPoint.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test-H5ComponentPoint.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/H5ComponentPolyline.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="15" column="74" lean-forward="true" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/H5ComponentBar.css">
+    <entry file="file://$PROJECT_DIR$/js/H5ComponentPolyline.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="38" column="15" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
+        <state relative-caret-position="328">
+          <caret line="122" column="25" selection-start-line="122" selection-start-column="25" selection-end-line="122" selection-end-column="25" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#683#699#0" />
+          </folding>
         </state>
       </provider>
     </entry>
