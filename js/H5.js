@@ -48,7 +48,7 @@ let H5 = function ( ) {
     /**
      * H5 对象初始化呈现
      */
-    this.loader = function () {
+    this.loader = function ( firstPage ) {
         this.el.fullpage({
             afterRender: function() {
                 $(this).find('.h5_component').trigger('onLoad');
@@ -61,6 +61,8 @@ let H5 = function ( ) {
             }
         });
         this.el.show();
+        firstPage && $.fn.fullpage.moveTo( firstPage );
+
     }
 
     return this;

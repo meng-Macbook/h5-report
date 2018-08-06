@@ -5,7 +5,7 @@ let H5ComponentBase = function ( name,  cfg = {} ) {
 
     // 把当前的组件类型添加到样式中进行标记
     let cls = "h5_component_" + cfg.type; //
-    let component = $('<div class="h5_component '+ cls + ' "h5_component_name_' + name +'" id="'+ id +'"></div>');
+    let component = $('<div class="h5_component '+ cls + ' h5_component_name_' + name +'" id="'+ id +'"></div>');
 
     cfg.text    &&  component.text(cfg.text);
     cfg.width   &&  component.width(cfg.width/2);
@@ -24,8 +24,11 @@ let H5ComponentBase = function ( name,  cfg = {} ) {
     // ... 更过自定义参数
     component.on('onLoad', function () {
 
-        $(this).addClass(cls + '_load').removeClass(cls + '_leave');
-        cfg.animateIn && component.animate( cfg.animateIn );
+        setTimeout(() => {
+            $(this).addClass(cls + '_load').removeClass(cls + '_leave');
+            cfg.animateIn && component.animate( cfg.animateIn );
+        }, cfg.delay || 0);
+
         return this;
     })
     component.on('onLeave', function () {

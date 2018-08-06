@@ -35,6 +35,41 @@
             margin: 0;
             padding: 0;
         }
+        .h5_page{
+            background-image: url(imgs/page_bg.png);
+        }
+        .h5_page_face{
+            background-image: url(imgs/face_bg.png);
+        }
+
+
+        .h5_component_name_slogan{
+            animation: rock 2s infinite 2s;
+        }
+
+
+        @keyframes rock{
+            0%{ transform: rotate(0deg)}
+            5%{ transform: rotate(3deg)}
+            10%{ transform: rotate(-4deg)}
+            15%{ transform: rotate(3deg)}
+            20%{ transform: rotate(-2deg)}
+            25%{ transform: rotate(1deg)}
+            30%{ transform: rotate(-1deg)}
+            70%{ transform: rotate(0deg)}
+            100%{ transform: rotate(0deg)}
+        }
+
+        .h5_component_name_caption{
+            background-image: url("imgs/page_caption_bg.png");
+            width: 283px;
+            height: 160px;
+            text-align: center;
+            line-height: 140px;
+            font-size: 20px;
+            color: #fff;
+        }
+
     </style>
 
     <script>
@@ -44,47 +79,92 @@
 
             ppt
                 .addPage('face')
-                .addComponent('logo', {
-                    text: 'logo',
-                    width: 400,
-                    height: 100,
-                    css: {
-                        backgroundColor: 'red',
-                        top: 200,
-                        opacity: 0
-                    },
+                    .addComponent('topic', {
+                        center: true,
+                        width: 395,
+                        height: 130,
+                        bg: 'imgs/face_logo.png',
+                        css: {opacity: 0},
+                        animateIn: {top: 100, opacity: 1},
+                        animateOut: {top: 0, opacity: 0}
+                    })
+                    .addComponent('slogan', {
+                        center: true,
+                        width: 365,
+                        height: 99,
+                        bg: 'imgs/face_slogan.png',
+                        css: {opacity: 0, top: 180},
+                        animateIn: {left: '50%', opacity: 1},
+                        animateOut: {left: '0', opacity: 0},
+                        delay: 500
+                    })
+                    .addComponent('face_img_left', {
+                        width: 370,
+                        height: 493,
+                        bg: 'imgs/face_img_left.png',
+                        css: {opacity: 0, left: -50, bottom: -50},
+                        animateIn: {opacity: 1, left: 0, bottom: 0},
+                        animateOut: {opacity: 0, left: -50, bottom: -50},
+                        delay: 1000
+                    })
+                    .addComponent('face_img_right', {
+                        width: 276,
+                        height: 449,
+                        bg: 'imgs/face_img_right.png',
+                        css: {opacity: 0, right: -50, bottom: -50},
+                        animateIn: {opacity: 1, right: 0, bottom: 0},
+                        animateOut: {opacity: 0, right: -50, bottom: -50},
+                        delay: 1000
+                    })
+                .addPage()
+                    .addComponent('caption', {text: '核心理念'})
+                .addComponent('text', {
+                    width: 500,
+                    height: 30,
                     center: true,
-                    animateIn: {
-                        opacity: 1
-                    },
-                    animateOut: {
-                        opacity: 0
-                    }
-                })
-                .addComponent('slogan', {
-                    text: 'slogan',
-                    width: 400,
-                    height: 100,
+                    text: 'IT教育网=只学有用的',
                     css: {
-                        backgroundColor: 'red',
-                        top: 350
+                        opacity: 0,
+                        textAlign: 'center',
+                        color: 'red',
+                        fontSize: '26px'
                     },
-                    center: true
+                    animateIn: {opacity: 1, top: 160},
+                    animateOut: {opacity: 0, top: 240},
                 })
-                .addPage('desc')
-                .addComponent('caption', {
-                    text: '核心理念',
-                    width: 400,
-                    height: 100,
+                .addComponent('description', {
+                    width: 481,
+                    height: 295,
+                    center: true,
+                    bg: 'imgs/description_bg.gif',
+                    text: '2013年，IT教育网的诞生引领中国IT职业从教育进入新时代；高质量的实战课程、全新的教学模式、实时互动学习,以领先的优势打造行业品牌；迄今为止，IT教育网已成为中国规模最大的，呵呵呵',
                     css: {
-                        backgroundColor: 'green',
-                        top: 350
+                        opacity: 0,
+                        padding: '15px 10px 10px 10px',
+                        color: '#fff',
+                        fontSize: '15px',
+                        lineHeight: '18px',
+                        textAlign: 'justify',
+                        top: 240,
                     },
-                    center: true
+                    animateIn: {opacity: 1, top: 210},
+                    animateOut: {opacity: 0, top: 240},
+                    delay: 500
                 })
-                .addPage('page-3')
-                .addComponent('caption', {text: '课程方向分布'})
-                .loader()
+                .addComponent('people', {
+                    width: 515,
+                    height: 305,
+                    center: true,
+                    bg: 'imgs/p1_people.png',
+                    css: {
+                        opacity: 0,
+                        bottom: 0,
+                    },
+                    animateIn: {opacity: 1, bottom: 40},
+                    animateOut: {opacity: 0, bottom: 0},
+                    delay: 1000
+                })
+                .loader( 2 )
         })
     </script>
 
