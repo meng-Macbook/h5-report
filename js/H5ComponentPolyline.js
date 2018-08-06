@@ -31,13 +31,11 @@ let H5ComponentPolyline = function (name, cfg = {}) {
         let x = w/step * i;
         ctx.moveTo(x, 0);
         ctx.lineTo(x, h);
-
         cfg.data[i] && function () {
             let text = $('<div class="text"></div>');
             text.text(cfg.data[i][0]);
             text.css('width', text_w/2).css('left', x/2 + text_w/2 - text_w/4);
             component.append(text);
-
         }()
     }
     ctx.stroke();
@@ -116,8 +114,14 @@ let H5ComponentPolyline = function (name, cfg = {}) {
             setTimeout(() => {
                 s+= .01;
                 draw(s);
-            }, i * 10);
+            }, i * 10 + 500);
+        }
 
+        let text = component.find('.text');
+        for( let i = 0; i < cfg.data.length; i++) {
+            setTimeout(() => {
+                text.eq(i).css('opacity', 1);
+            }, i * 200 + 500);
         }
     })
     component.on('onLeave', function () {

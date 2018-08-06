@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60039123-8577-47fb-ae92-d55dff5ce3d1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/css/H5ComponentPolyline.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/H5ComponentPolyline.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test-H5ComponentPolyline.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/H5ComponentPolyline.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/H5ComponentPolyline.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/H5ComponentPolyline.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/H5ComponentPolyline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test-H5ComponentPolyline.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/test-H5ComponentPolyline.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,8 +21,8 @@
       <file leaf-file-name="test-H5ComponentPolyline.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/test-H5ComponentPolyline.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="53" column="28" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="28" />
+            <state relative-caret-position="309">
+              <caret line="63" selection-start-line="63" selection-end-line="70" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -31,8 +30,8 @@
       <file leaf-file-name="H5ComponentPolyline.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/H5ComponentPolyline.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="437">
+              <caret line="23" column="11" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -40,11 +39,12 @@
       <file leaf-file-name="H5ComponentPolyline.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/H5ComponentPolyline.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="122" column="25" selection-start-line="122" selection-start-column="25" selection-end-line="122" selection-end-column="25" />
+            <state relative-caret-position="458">
+              <caret line="123" column="21" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#683#699#0" />
+                <element signature="e#1476#2483#0" />
+                <element signature="e#2967#3167#0" />
               </folding>
             </state>
           </provider>
@@ -64,6 +64,7 @@
       <find>lineWidth</find>
       <find>h5_component_polyline</find>
       <find>strokeStyle</find>
+      <find>cfg.data.length</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -223,18 +224,18 @@
       <workItem from="1533265870747" duration="17000" />
       <workItem from="1533265894953" duration="16385000" />
       <workItem from="1533448722002" duration="7829000" />
-      <workItem from="1533520373797" duration="14370000" />
+      <workItem from="1533520373797" duration="15676000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41023000" />
+    <option name="totallyTimeSpent" value="42329000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18020834" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18020834" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="调试" order="11" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -292,7 +293,8 @@
         <state>
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#683#699#0" />
+            <element signature="e#1476#2483#0" />
+            <element signature="e#2967#3167#0" />
           </folding>
         </state>
       </provider>
@@ -490,13 +492,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test-H5ComponentPolyline.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="53" column="28" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/H5ComponentPoint.css">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -511,20 +506,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/test-H5ComponentPolyline.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="63" selection-start-line="63" selection-end-line="70" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/H5ComponentPolyline.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="437">
+          <caret line="23" column="11" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/H5ComponentPolyline.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="122" column="25" selection-start-line="122" selection-start-column="25" selection-end-line="122" selection-end-column="25" />
+        <state relative-caret-position="458">
+          <caret line="123" column="21" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#683#699#0" />
+            <element signature="e#1476#2483#0" />
+            <element signature="e#2967#3167#0" />
           </folding>
         </state>
       </provider>

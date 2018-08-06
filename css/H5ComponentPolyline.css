@@ -19,5 +19,12 @@
     overflow: hidden;
     -ms-text-overflow: ellipsis;
     text-overflow: ellipsis;
-    
+    transform: scale(.8);
+    transition: all 1s 1.5s;
+    opacity: 0;
+}
+
+
+.h5_component_polyline_leave .text{
+    opacity: 0;
 }
