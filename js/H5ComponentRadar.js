@@ -65,8 +65,48 @@ let H5ComponentRadar = function (name, cfg={}) {
     ctx.fill();
     ctx.stroke();
 
+    // 数据层开发
+    // 加入一块画布（数据层）
+    let cns2 = document.createElement('canvas');
+    let ctx2 = cns2.getContext('2d');
+    cns2.width = ctx2.width = w;
+    cns2.height = ctx2.height = h;
+    component.append(cns2);
+
+    ctx2.strokeStyle = '#f00';
 
     function draw(per) {
+        // 输出数据的折线
+        ctx2.clearRect(0, 0, w, h);
+        ctx2.beginPath();
+        for(let i = 0; i < step; i++) {
+            let rad = (2 * Math.PI/360) * (360 / step) * i;
+            let rate = cfg.data[i][1] * per;
+            let x = r + Math.sin( rad ) * r * rate;
+            let y = r + Math.cos( rad ) * r * rate;
+
+            ctx2.lineTo(x, y);
+        }
+
+        ctx2.closePath();
+        ctx2.stroke();
+
+        // 输出数据的点
+        ctx2.fillStyle = '#ff7676';
+        for(let i = 0; i < step; i++) {
+            let rad = (2 * Math.PI/360) * (360 / step) * i;
+            let rate = cfg.data[i][1] * per;
+            let x = r + Math.sin( rad ) * r * rate;
+            let y = r + Math.cos( rad ) * r * rate;
+
+            ctx2.beginPath();
+            ctx2.arc(x, y, 5, 0, 2 * Math.PI);
+            ctx2.fill();
+            ctx2.closePath();
+        }
+        ctx2.stroke();
+
+
     }
 
 
@@ -76,22 +116,22 @@ let H5ComponentRadar = function (name, cfg={}) {
         for( let i = 0; i < 100; i++) {
             setTimeout(() => {
                 s+= .01;
-                // draw(s);
+                draw(s);
             }, i * 10 + 500);
         }
 
     })
-    component.on('onLeave', function () {
-        // 雷达图退场动画
-        let s = 1;
-        for( let i = 0; i < 100; i++) {
-            setTimeout(() => {
-                s-= .01;
-                // draw(s);
-            }, i * 10);
-
-        }
-    })
+    // component.on('onLeave', function () {
+    //     // 雷达图退场动画
+    //     let s = 1;
+    //     for( let i = 0; i < 100; i++) {
+    //         setTimeout(() => {
+    //             s-= .01;
+    //             // draw(s);
+    //         }, i * 10);
+    //
+    //     }
+    // })
 
     return component;
 }
