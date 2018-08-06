@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慕课2015课程学习报告</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            font-size: 12px;
+        }
+
+        .iphone{
+            width: 340px;
+            height: 540px;
+            background-color: #fff;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -270px 0 0 -170px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="../css/H5ComponentBase.css">
+    <link rel="stylesheet" href="../css/H5ComponentRadar.css">
+
+
+</head>
+<body>
+<!--用于开发测试 H5ComponentRadar 对象（折线组件）-->
+
+<div class="iphone">
+
+</div>
+
+<script src="../js/lib/jquery.js"></script>
+<script src="../js/H5ComponentBase.js"></script>
+
+<!-- 引入 折线图 资源 -->
+<script src="../js/H5ComponentRadar.js"></script>
+
+<script>
+
+    let cfg = {
+        type: 'radar',
+        width: 400,
+        height: 400,
+        data: [
+            ['Javascript', .4, '#ff7676'],
+            ['HTML/CSS3', .2],
+            ['CSS3', .1],
+            ['HTML5', .2,],
+            ['jQuery', .35],
+        ],
+        css: {
+            top: 100,
+            // opacity: 0
+        },
+        // animateIn: {
+        //     opacity: 1,
+        //     top: 200
+        // },
+        // animateOut: {
+        //     opacity: 0,
+        //     top: 100
+        // },
+        center: true
+    };
+
+    let h5 = new H5ComponentRadar( 'myPolylineComponent', cfg );
+    $('.iphone').append(h5);
+
+    let load = true;
+    $('body').click(function () {
+        load = !load;
+        $('.h5_component').trigger( load ? 'onLeave' : 'onLoad' );
+    })
+
+</script>
+</body>
+</html>
