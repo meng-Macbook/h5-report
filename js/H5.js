@@ -1,4 +1,5 @@
 /* 内容管理对象 */
+let jData = [];
 
 let H5 = function ( ) {
     this.id = ('h5_' + Math.random()).replace('.', '_');
@@ -13,6 +14,7 @@ let H5 = function ( ) {
      * @return H5 H5对象，可以重复使用H5对象支持的方法
      */
     this.addPage = function (name, text) {
+        jData.push({isPage: true, name: name, text: text});
         let page = $('<div class="h5_page section"></div>');
 
         name && page.addClass('h5_page_' + name);
@@ -21,10 +23,13 @@ let H5 = function ( ) {
         this.el.append(page);
         this.page.push( page );
 
+        typeof this.whenAddPage === 'function' && this.whenAddPage();
+
         return this;
     }
 
     this.addComponent = function (name, cfg = {}) {
+        jData.push({isPage: false, name: name, cfg: cfg});
         cfg = $.extend({
             type: 'base'
         }, cfg);
@@ -35,7 +40,16 @@ let H5 = function ( ) {
         switch ( cfg.type ) {
             case 'base':
                 component = new H5ComponentBase(name, cfg);
-            break;
+                break;
+            case 'polyline':
+                component = new H5ComponentPolyline(name, cfg);
+                break;
+            case 'bar':
+                component = new H5ComponentBar(name, cfg);
+                break;
+            case 'radar':
+                component = new H5ComponentRadar(name, cfg);
+                break;
             default:;
         }
 
@@ -62,8 +76,11 @@ let H5 = function ( ) {
         });
         this.el.show();
         firstPage && $.fn.fullpage.moveTo( firstPage );
-
+        return this;
     }
+
+    typeof H5_loading === 'function' && (this.loader = H5_loading);
 
     return this;
 }
+

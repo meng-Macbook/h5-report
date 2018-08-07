@@ -22,6 +22,10 @@ let H5ComponentBase = function ( name,  cfg = {} ) {
     }
 
     // ... 更过自定义参数
+
+    (typeof cfg.onclick === 'function') && component.on('click', cfg.onclick);
+
+
     component.on('onLoad', function () {
 
         setTimeout(() => {

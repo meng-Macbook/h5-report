@@ -57,7 +57,6 @@ let H5ComponentPolyline = function (name, cfg = {}) {
      * @param {floot} per 0 ~ 1
      *
      */
-
     function draw(per) {
         // 清空画布
         ctx2.clearRect(0, 0, w, h);
@@ -114,15 +113,9 @@ let H5ComponentPolyline = function (name, cfg = {}) {
             setTimeout(() => {
                 s+= .01;
                 draw(s);
-            }, i * 10 + 500);
+            }, (i * 10) + 500);
         }
 
-        let text = component.find('.text');
-        for( let i = 0; i < cfg.data.length; i++) {
-            setTimeout(() => {
-                text.eq(i).css('opacity', 1);
-            }, i * 200 + 500);
-        }
     })
     component.on('onLeave', function () {
         // 折线退场动画
@@ -132,7 +125,6 @@ let H5ComponentPolyline = function (name, cfg = {}) {
                 s-= .01;
                 draw(s);
             }, i * 10);
-
         }
     })
 
